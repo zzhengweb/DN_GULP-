@@ -1,0 +1,243 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>苏州鼎纳自动化技术有限公司</title>
+  <meta name="DESCRIPTION" content="">
+  <meta name="KEYWORDS" content=""> 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link type="text/css" rel="stylesheet" href="./fancybox/jquery.culture.fancybox-1.3.4.css" media="screen" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/response.css">
+  <script src="js/flexible.js"></script>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+    let relArr = ["a[rel=example_group]","a[rel=example_group1]","a[rel=example_group2]","a[rel=example_group12]","a[rel=example_group3]","a[rel=example_group4]","a[rel=example_group5]","a[rel=example_group6]","a[rel=example_group7]","a[rel=example_group8]"];
+    relArr.map(item=>{
+      $(item).fancybox({
+        'transitionIn'		: 'none',
+        'transitionOut'		: 'none',
+        'titlePosition' 	: 'over',
+      });
+    })
+  });
+  </script>
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!--顶部导航-->
+  <nav class="header_bg close_nav" id="change_nav" >
+    <div class="container_zz">
+      <div class="header_nav" onmouseleave="popupHide()">
+        <div class="change_btn visible_xs" id="change_btn">
+            <img src="./images/open.jpg" class="open_btn">
+            <img src="./images/close.jpg" class="close_btn">
+        </div>
+        <div class="header_logo">
+          <a href="index.html"><img src="./images/logo.png" class="imgFull"></a>
+        </div>
+        <ul class="header_list">
+          <li onMouseOver="popupHide()"><a href="index.html">首页</a></li>
+          <li onMouseOver="popupHide()"><a href="pro_center.html">产品介绍</a></li>
+          <li onMouseOver="popupHide()"><a href="industry.html">行业应用</a></li>
+          <li onMouseOver="popupHide()"><a href="service.html">服务支持</a></li>
+          <li onMouseOver="popupHide()"><a href="news.html">新闻动态</a></li>
+          <li onMouseOver="popupComponent()" onclick="popupChange()" class="active">
+            <a style="cursor: pointer;" >关于我们<span class="visible_xs up_icon"><img src="./images/arrow.jpg"></span></a>
+            <ul class="popup" id="popup">
+              <li><a href="intro.html">公司介绍</a></li>
+              <li><a href="job.html">人才招聘</a></li>
+              <li><a href="develop.html">发展历程</a></li>
+              <li class="active"><a href="culture.html">企业文化</a></li>
+              <li><a href="university.html">企业大学</a></li>
+            </ul>
+          </li>
+          <!-- <li class="visible_xs"><a href="intro.html" >关于我们</a></li> -->
+        </ul>
+        <div class="change_lang hidden_xs">
+          <a href="#" class="border_en">EN</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- 海报 -->
+  <div class="banner">
+    <img src="./images/intro/banner.jpg" class="imgFull hidden_xs">
+    <img src="./images/intro/banner_xs.jpg" class="imgFull visible_xs">
+  </div>
+  <!-- 企业文化组件 -->
+  <div class="culture_wrapper">
+    <div class="container_zz">
+      <div class="main_title">
+        <div class="title_big">企业文化</div>
+        <div class="title_small">企业文化</div>
+      </div>
+      <div class="pro_component_title">企业使命</div>
+      <div class="mission_list">
+        <div class="mission_item">
+          <img src="./images/culture/icon1.jpg">
+          <div class="item_title">专注客户需求</div>
+        </div>
+        <div class="mission_item">
+          <img src="./images/culture/icon2.jpg">
+          <div class="item_title">提供极致服务及技术</div>
+        </div>
+        <div class="mission_item">
+          <img src="./images/culture/icon3.jpg">
+          <div class="item_title">为客户、员工、股东<br/>持续创造价值</div>
+        </div>
+      </div>
+      <div class="pro_component_title">企业愿景</div>
+      <div class="main_content">
+        <img src="./images/culture/1.jpg" class="imgFull">
+      </div>
+      <div class="pro_component_title">企业价值观</div>
+      <div class="sence_box">
+        <div class="sence_item">
+          <div class="sence_img">
+            <img src="./images/culture/value1.jpg">
+          </div>
+          <div class="sence_title">尊爱至诚</div>
+        </div>
+        <div class="sence_item">
+          <div class="sence_img">
+            <img src="./images/culture/value2.jpg">
+          </div>
+          <div class="sence_title">富有责任</div>
+        </div>
+        <div class="sence_item">
+          <div class="sence_img">
+            <img src="./images/culture/value3.jpg">
+          </div>
+          <div class="sence_title">追求卓越</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="culture_bottom">
+    <div class="container_zz">
+      <div class="pro_component_title">企业活动</div>
+      <div class="culture_content">
+        <div class="swiper-container" id="culture_box">
+          <div class="swiper-wrapper"></div>
+          <div class="swiper-button-prev"><img src="./images/pre.png"></div>
+          <div class="swiper-button-next"><img src="./images/next.png"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 页面底部 -->
+  <footer class="footer">
+    <div class="container_zz">
+      <div class="footer_box1">
+        <div class="logo_img">
+          <img src="./images/footer_logo.png" class="imgFull">
+        </div>
+        <ul class="footer_nav">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="pro_center.html">产品介绍</a></li>
+          <li><a href="industry.html">行业应用</a></li>
+          <li><a href="service.html">服务支持</a></li>
+          <li><a href="news.html">新闻动态</a></li>
+          <li><a href="intro.html" >关于我们</a></li>
+        </ul>
+      </div>
+      <div class="footer_box2">
+        <div class="footer_box2_left"></div>
+        <div class="footer_box2_right">
+          <div class="footer2_item1">
+            <div class="item1_title">电话: </div>
+            <div class="item1_det">0512-66957689</div>
+          </div>
+          <div class="footer2_item1">
+            <div class="item1_title">电子邮件:</div>
+            <div class="item1_det">info@dinnar.cn </div>
+          </div>
+          <div class="footer2_item1">
+            <div class="item1_title">地址： </div>
+            <div class="item1_det">工业园区葑亭大道598号 1号楼东</div>
+          </div>
+          <div class="footer2_item2">
+            <div class="item2_icon icon1">
+              <a href="#"><img src="./images/qq.png"></a>
+            </div>
+            <div class="item2_icon icon2" id="wx_switch">
+              <img src="./images/wx.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- 版权 -->
+  <div class="footer_b">页面版权所有苏州鼎纳自动化技术有限公司 Copyright © 2018 All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;苏ICP备13055261号-1 </div>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script language="javascript"> 
+    // 企业文化轮播图配置数据
+    //title活动名称
+    //count活动展示图片个数，小于文件夹中图片个数
+    // 图片和文件夹目前都是以数字命名，方便操作
+    let cultureList=[{
+      title:'2019年圣诞',
+      count:3
+    },{
+      title:'2019年拓展',
+      count:5
+    },{
+      title:'2020年10周年',
+      count:14
+    },{
+      title:'2020年Excel培训',
+      count:2
+    },{
+      title:'2020年工作坊',
+      count:10
+    },{
+      title:'2020年会',
+      count:9
+    },{
+      title:'2020年消防演练',
+      count:69
+    },{
+      title:'2020年员工外部培训',
+      count:6
+    }]
+    let cultureNode = document.getElementById('culture_box');
+    let cultureBox = cultureNode.getElementsByClassName('swiper-wrapper')[0];
+    for(let i = 1;i<=cultureList.length;i++){//企业文化活动遍历
+      let slideNode = document.createElement('div');
+      slideNode.className = 'swiper-slide';
+      let slideContent = '';
+      for(let j=1;j<=cultureList[i-1].count;j++){//企业图片遍历
+        if(j===1){
+          slideContent += `<a rel="example_group${i}" href="./images/culture/${i}/${j}.jpg"><img src="./images/culture/small/${i}.jpg" class="imgFull"></a>`;
+        }else{
+          slideContent += `<a rel="example_group${i}" href="./images/culture/${i}/${j}.jpg" style="display:none"></a>`;
+        }
+      }
+      slideContent += `<div class="img_title">${cultureList[i-1].title}</div>`;
+      slideNode.innerHTML = slideContent;
+      cultureBox.appendChild(slideNode);
+    }
+
+    var culture_box = new Swiper('#culture_box',{
+      delay: 3000,
+      loop : true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    })
+  </script>
+</body>
+</html>

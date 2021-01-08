@@ -1,0 +1,423 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>苏州鼎纳自动化技术有限公司</title>
+  <meta name="DESCRIPTION" content="">
+  <meta name="KEYWORDS" content=""> 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/response.css">
+  
+  <script src="js/flexible.js"></script>
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!--顶部导航-->
+  <nav class="header_bg close_nav" id="change_nav">
+    <div class="container_zz">
+      <div class="header_nav" onmouseleave="popupHide()">
+        <div class="change_btn visible_xs" id="change_btn">
+            <img src="./images/open.jpg" class="open_btn">
+            <img src="./images/close.jpg" class="close_btn">
+        </div>
+        <div class="header_logo">
+          <a href="index.html"><img src="./images/logo.png" class="imgFull"></a>
+        </div>
+        <ul class="header_list">
+          <li onMouseOver="popupHide()"><a href="index.html">首页</a></li>
+          <li onMouseOver="popupHide()"><a href="pro_center.html">产品介绍</a></li>
+          <li onMouseOver="popupHide()" class="active"><a href="industry.html">行业应用</a></li>
+          <li onMouseOver="popupHide()"><a href="service.html">服务支持</a></li>
+          <li onMouseOver="popupHide()"><a href="news.html">新闻动态</a></li>
+          <li onMouseOver="popupComponent()" onclick="popupChange()">
+            <a style="cursor: pointer;" >关于我们<span class="visible_xs up_icon"><img src="./images/arrow.jpg"></span></a>
+            <ul class="popup" id="popup">
+              <li><a href="intro.html">公司介绍</a></li>
+              <li><a href="job.html">人才招聘</a></li>
+              <li><a href="develop.html">发展历程</a></li>
+              <li><a href="culture.html">企业文化</a></li>
+              <li><a href="university.html">企业大学</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="change_lang hidden_xs">
+          <a href="#" class="border_en">EN</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- 海报 -->
+  <div class="banner">
+    <img src="./images/industry/banner.jpg" class="imgFull hidden_xs">
+    <img src="./images/industry/banner_xs.jpg" class="imgFull visible_xs">
+  </div>
+  <!-- 行业应用组件 -->
+  <div class="industry_title">
+    <div class="container_zz">
+      <div class="main_title">
+        <div class="title_big">行业应用</div>
+        <div class="title_small">行业应用</div>
+      </div>
+    </div>
+  </div>
+  <div class="switch_industry">
+    <div class="swiper-container" id="swiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="top_img">
+            <div class="top_left">
+              <img src="./images/industry/bigImg/1.jpg" class="imgFull">
+            </div>
+            <div class="top_right">
+              <div class="indstry_name">3C消费电子</div>
+              <div class="industry_det">机器视觉在电子产品、半导体中的应用很多。消费类电子行业元器件尺寸较小，检测要求高，适合使用机器视觉系统进行检测...</div>
+              <div class="industry_more">
+                <a href="industry_det1.html">更多 &gt;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="top_img">
+            <div class="top_left">
+              <img src="./images/industry/bigImg/2.jpg" class="imgFull">
+            </div>
+            <div class="top_right">
+              <div class="indstry_name">医药</div>
+              <div class="industry_det">药瓶包装外观缺陷检测系统主要针对口服液玻璃药瓶、塑料瓶及塑料容器进行快速、可靠的检测，项目有飞边、污渍、缺料、瓶口圆度、杂质物、孔洞、薄壁区域检测等...</div>
+              <div class="industry_more">
+                <a href="industry_det2.html">更多 &gt;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="top_img">
+            <div class="top_left">
+              <img src="./images/industry/bigImg/3.jpg" class="imgFull">
+            </div>
+            <div class="top_right">
+              <div class="indstry_name">汽车</div>
+              <div class="industry_det">汽车小型零部件产品生产过程中，表面容易出现划伤、划痕、辊印、凹坑、粗糙、波纹等外观缺陷和大型零部件引导对位，依靠人工检测已经无法满足工艺和精度要求...</div>
+              <div class="industry_more">
+                <a href="industry_det3.html">更多 &gt;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="top_img">
+            <div class="top_left">
+              <img src="./images/industry/bigImg/4.jpg" class="imgFull">
+            </div>
+            <div class="top_right">
+              <div class="indstry_name">化妆品、半导体、物流、家具</div>
+              <div class="industry_det">机器视觉在半导体行业的使用涉及到半导体外观缺点、尺度巨细、数量、平整度、距离、定位、校准、焊点质量、弯曲度等等的检测和丈量，依据图画数据判别找出缺点商品等...</div>
+              <div class="industry_more">
+                <a href="industry_det4.html">更多 &gt;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="top_img">
+            <div class="top_left">
+              <img src="./images/industry/bigImg/5.jpg" class="imgFull">
+            </div>
+            <div class="top_right">
+              <div class="indstry_name">显示面板</div>
+              <div class="industry_det">目前随着面板尺寸加大，分辨率增高，像素增多且单个像素变小，线与线的布线走线都相当密集，大大提高了成膜制造的困难度，在面板制造过程中...</div>
+              <div class="industry_more">
+                <a href="industry_det5.html">更多 &gt;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-prev"><img src="./images/pre.png"></div>
+      <div class="swiper-button-next"><img src="./images/next.png"></div>
+    </div>
+    <div class="bottom_img">
+      <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper" id="gallery-list">
+          <div class="swiper-slide">
+            <div class="thumbs_model">
+              <div class="model_title">3C消费电子</div>
+            </div>
+            <img src="./images/industry/smallImg/1.jpg" class="imgFull">
+          </div>
+          <div class="swiper-slide">
+            <div class="thumbs_model">
+              <div class="model_title">医药</div>
+            </div>
+            <img src="./images/industry/smallImg/2.jpg" class="imgFull">
+          </div>
+          <div class="swiper-slide">
+            <div class="thumbs_model">
+              <div class="model_title">汽车</div>
+            </div>
+            <img src="./images/industry/smallImg/3.jpg" class="imgFull">
+          </div>
+          <div class="swiper-slide">
+            <div class="thumbs_model">
+              <div class="model_title">其他</div>
+              <div class="model_det">（化妆品、半导体、物流、家具）</div>
+            </div>
+            <img src="./images/industry/smallImg/4.jpg" class="imgFull">
+          </div>
+          <div class="swiper-slide">
+            <div class="thumbs_model">
+              <div class="model_title">显示面板</div>
+            </div>
+            <img src="./images/industry/smallImg/5.jpg" class="imgFull">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="switch_case">
+    <div class="container_zz">
+      <div class="case_top">
+        <div class="main_title">
+          <div class="title_big">案例介绍</div>
+          <div class="title_small">案例介绍</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="switch_case_bottom">
+    <div class="case_bottom">
+      <div class="container_zz">
+        <div class="swiper-container case_show hidden_xs" id="case_show">
+          <div class="swiper-wrapper" id="case_box">
+            <div class="swiper-slide">
+              <div class="slide_img">
+                <a href="case_det.html"><img src="./images/industry/case/1.jpg" class="imgFull"></a>
+              </div>
+              <div class="slide_content">
+                <img src="./images/industry/content_left.png" class="left_icon">
+                <div class="case_title">汽车前挡风玻璃支架贴合对位</div>
+                <div class="case_det">贴合是汽车挡风玻璃贴膜加工工艺过程中非常重要的环节，现阶段视觉引导技术几乎成为这一流程的必备技术，利用视觉引导实现...</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide_img">
+                <a href="case_det.html"><img src="./images/industry/case/2.jpg" class="imgFull"></a>
+              </div>
+              <div class="slide_content">
+                <img src="./images/industry/content_left.png" class="left_icon">
+                <div class="case_title">医用盐水瓶检测</div>
+                <div class="case_det">对盐水瓶的飞边、污渍、缺料、瓶口圆度、杂质物、孔洞、薄壁区域进行缺陷检测，采用的方案是以PC机为核心,通过传送运动控制装置...</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide_img">
+                <a href="case_det.html"><img src="./images/industry/case/3.jpg" class="imgFull"></a>
+              </div>
+              <div class="slide_content">
+                <img src="./images/industry/content_left.png" class="left_icon">
+                <div class="case_title">万向十字轴外观缺陷检测产品</div>
+                <div class="case_det">十字轴是实现变角度动力传递的机件,用于需要改变传动轴线方向的位置,它是汽车驱动系统的万向传动装置的“关节”部件 ...</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide_img">
+                <a href="case_det.html"><img src="./images/industry/case/4.jpg" class="imgFull"></a>
+              </div>
+              <div class="slide_content">
+                <img src="./images/industry/content_left.png" class="left_icon">
+                <div class="case_title">手机外观全尺寸检测</div>
+                <div class="case_det">随着计算机视觉理论基础，机器视觉得到了快速的发展，在工业产品检测得到了广泛应用，针对手机屏幕到外壳间间隙、听筒宽度...</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide_img">
+                <a href="case_det.html"><img src="./images/industry/case/5.jpg" class="imgFull"></a>
+              </div>
+              <div class="slide_content">
+                <img src="./images/industry/content_left.png" class="left_icon">
+                <div class="case_title">液晶显示屏视觉缺陷检测</div>
+                <div class="case_det">有机发光的液晶显示器因其具有自发光、宽视角、高清晰、低成本、低功耗、可实现柔性显示等特点，被认为是理想的下一代平板显示技术...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-container case_show visible_xs" id="case_show2">
+          <div class="swiper-wrapper" id="case_box">
+            <div class="swiper-slide">
+              <div class="slide_img">
+                <a href="case_det.html"><img src="./images/industry/case/1.jpg" class="imgFull"></a>
+              </div>
+              <div class="slide_content">
+                <img src="./images/industry/content_left.png" class="left_icon">
+                <div class="case_title">汽车前挡风玻璃支架贴合对位</div>
+                <div class="case_det">贴合是汽车挡风玻璃贴膜加工工艺过程中非常重要的环节，现阶段视觉引导技术几乎成为这一流程的必备技术，利用视觉引导实现...</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide_img">
+                <a href="case_det.html"><img src="./images/industry/case/2.jpg" class="imgFull"></a>
+              </div>
+              <div class="slide_content">
+                <img src="./images/industry/content_left.png" class="left_icon">
+                <div class="case_title">医用盐水瓶检测</div>
+                <div class="case_det">对盐水瓶的飞边、污渍、缺料、瓶口圆度、杂质物、孔洞、薄壁区域进行缺陷检测，采用的方案是以PC机为核心,通过传送运动控制装置...</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide_img">
+                <a href="case_det.html"><img src="./images/industry/case/3.jpg" class="imgFull"></a>
+              </div>
+              <div class="slide_content">
+                <img src="./images/industry/content_left.png" class="left_icon">
+                <div class="case_title">万向十字轴外观缺陷检测产品</div>
+                <div class="case_det">十字轴是实现变角度动力传递的机件,用于需要改变传动轴线方向的位置,它是汽车驱动系统的万向传动装置的“关节”部件 ...</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide_img">
+                <a href="case_det.html"><img src="./images/industry/case/4.jpg" class="imgFull"></a>
+              </div>
+              <div class="slide_content">
+                <img src="./images/industry/content_left.png" class="left_icon">
+                <div class="case_title">消费电子类</div>
+                <div class="case_det">文案未给...文案未给...文案未给...文案未给...文案未给...文案未给...文案未给...文案未给...文案未给...文案未给...文案未给...</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide_img">
+                <a href="case_det.html"><img src="./images/industry/case/5.jpg" class="imgFull"></a>
+              </div>
+              <div class="slide_content">
+                <img src="./images/industry/content_left.png" class="left_icon">
+                <div class="case_title">显示面板</div>
+                <div class="case_det">文案未给...文案未给...文案未给...文案未给...文案未给...文案未给...文案未给...文案未给...文案未给...文案未给...文案未给...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-case-prev" id="swiper-case-prev"><img src="./images/pre.png"></div>
+      <div class="swiper-case-next" id="swiper-case-next"><img src="./images/next.png"></div>
+    </div>
+  </div>
+  <!-- 页面底部 -->
+  <footer class="footer">
+    <div class="container_zz">
+      <div class="footer_box1">
+        <div class="logo_img">
+          <img src="./images/footer_logo.png" class="imgFull">
+        </div>
+        <ul class="footer_nav">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="pro_center.html">产品介绍</a></li>
+          <li><a href="industry.html">行业应用</a></li>
+          <li><a href="service.html">服务支持</a></li>
+          <li><a href="news.html">新闻动态</a></li>
+          <li><a href="intro.html" >关于我们</a></li>
+        </ul>
+      </div>
+      <div class="footer_box2">
+        <div class="footer_box2_left"></div>
+        <div class="footer_box2_right">
+          <div class="footer2_item1">
+            <div class="item1_title">电话: </div>
+            <div class="item1_det">0512-66957689</div>
+          </div>
+          <div class="footer2_item1">
+            <div class="item1_title">电子邮件:</div>
+            <div class="item1_det">info@dinnar.cn </div>
+          </div>
+          <div class="footer2_item1">
+            <div class="item1_title">地址： </div>
+            <div class="item1_det">工业园区葑亭大道598号 1号楼东</div>
+          </div>
+          <div class="footer2_item2">
+            <div class="item2_icon icon1">
+              <a href="#"><img src="./images/qq.png"></a>
+            </div>
+            <div class="item2_icon icon2" id="wx_switch">
+              <img src="./images/wx.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- 版权 -->
+  <div class="footer_b">页面版权所有苏州鼎纳自动化技术有限公司 Copyright © 2018 All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;苏ICP备13055261号-1 </div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script>
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      slidesPerView: 5,
+      // loop: true,
+      initialSlide :0,
+      loopedSlides: 0, //looped slides should be the same
+    });
+    var galleryTop = new Swiper('#swiper1',{
+      loopedSlides: 0, //looped slides should be the same
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs,
+      },
+      on: {
+        slideChangeTransitionStart: function() {
+          let index_active = this.realIndex;
+          let gallerys = document.getElementById('gallery-list').children;
+          for(let i=0;i<gallerys.length;i++){
+            if(index_active===i){
+              gallerys[i].classList.add("swiper-slide-active");
+            }else{
+              gallerys[i].classList.remove("swiper-slide-active");
+            }
+          }
+        }
+      }
+    })
+    var case_show = new Swiper('#case_show',{
+      spaceBetween: 50,
+      slidesPerView: 2,
+      loop : true,
+      pagination: {
+        el: '.swiper-pagination',
+        bulletClass : 'my-bullet',
+        bulletActiveClass: 'my-bullet-active',
+        clickable :true,
+      },
+      navigation: {
+        nextEl: '.swiper-case-next',
+        prevEl: '.swiper-case-prev',
+      }
+    })
+    var case_show = new Swiper('#case_show2',{
+      spaceBetween: 50,
+      slidesPerView: 1,
+      loop : true,
+      pagination: {
+        el: '.swiper-pagination',
+        bulletClass : 'my-bullet',
+        bulletActiveClass: 'my-bullet-active',
+        clickable :true,
+      },
+      navigation: {
+        nextEl: '.swiper-case-next',
+        prevEl: '.swiper-case-prev',
+      }
+    })
+  </script>
+</body>
+</html>

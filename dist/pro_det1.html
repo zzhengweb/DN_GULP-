@@ -1,0 +1,244 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>苏州鼎纳自动化技术有限公司</title>
+  <meta name="DESCRIPTION" content="">
+  <meta name="KEYWORDS" content=""> 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/response.css">
+  
+  <script src="js/flexible.js"></script>
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!--顶部导航-->
+  <nav class="header_bg close_nav" id="change_nav">
+    <div class="container_zz">
+      <div class="header_nav" onmouseleave="popupHide()">
+        <div class="change_btn visible_xs" id="change_btn">
+            <img src="./images/open.jpg" class="open_btn">
+            <img src="./images/close.jpg" class="close_btn">
+        </div>
+        <div class="header_logo">
+          <a href="index.html"><img src="./images/logo.png" class="imgFull"></a>
+        </div>
+        <ul class="header_list">
+          <li onMouseOver="popupHide()"><a href="index.html">首页</a></li>
+          <li onMouseOver="popupHide()" class="active"><a href="pro_center.html">产品介绍</a></li>
+          <li onMouseOver="popupHide()"><a href="industry.html">行业应用</a></li>
+          <li onMouseOver="popupHide()"><a href="service.html">服务支持</a></li>
+          <li onMouseOver="popupHide()"><a href="news.html">新闻动态</a></li>
+          <li onMouseOver="popupComponent()" onClick="popupChange()">
+            <a style="cursor: pointer;" >关于我们<span class="visible_xs up_icon"><img src="./images/arrow.jpg"></span></a>
+            <ul class="popup" id="popup">
+              <li><a href="intro.html">公司介绍</a></li>
+              <li><a href="job.html">人才招聘</a></li>
+              <li><a href="develop.html">发展历程</a></li>
+              <li><a href="culture.html">企业文化</a></li>
+              <li><a href="university.html">企业大学</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="change_lang hidden_xs">
+          <a href="#" class="border_en">EN</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- 产品详情组件 -->
+  <nav class="det_nav ph_top">
+    <div class="container_zz">
+      <div>
+        <a href="pro_type1.html" class="nav_color1">视觉检测设备</a> &gt; <a class="nav_color2">电池复合薄膜缺陷检测</a>
+      </div>
+    </div>
+  </nav>
+  <div class="pro_det_top">
+    <div class="container_zz">
+      <div class="main_title">
+        <div class="title_big">电池复合薄膜缺陷检测</div>
+        <div class="title_small">电池复合薄膜缺陷检测</div>
+      </div>
+      <img src="./images/proList/1/1.jpg" class="imgFull pro_img">
+    </div>
+  </div>
+  <!-- 产品特点 -->
+  <div class="pro_det_merit">
+    <div class="container_zz">
+      <div class="pro_component_title">特点</div>
+      <div class="merit_list">
+        <div class="merit_item">
+          <div class="merit_item_title"><img src="images/proList/icon1.jpg">速度快</div>
+          <div class="merit_item_det">采用双工位运行，CT=0.75s/pcs</div>
+        </div>
+        <div class="merit_item">
+          <div class="merit_item_title"><img src="images/proList/icon2.jpg">运行稳定</div>
+          <div class="merit_item_det">每日运行检测80k无机故</div>
+        </div>
+        <div class="merit_item">
+          <div class="merit_item_title"><img src="images/proList/icon3.jpg">快速更换弹夹</div>
+          <div class="merit_item_det">采用可快速更换弹夹：上料时间短，并可实现快速切换产品</div>
+        </div>
+        <div class="merit_item">
+          <div class="merit_item_title"><img src="images/proList/icon4.jpg">兼容性强</div>
+          <div class="merit_item_det">一台机器可检测三种产品，可以包容不同尺寸产品</div>
+        </div>
+        <div class="merit_item">
+          <div class="merit_item_title"><img src="images/proList/icon5.jpg">同时检测</div>
+          <div class="merit_item_det">尺寸和外观可同时检测</div>
+        </div>
+        <div class="merit_item">
+          <div class="merit_item_title"><img src="images/proList/icon6.jpg">精度高</div>
+          <div class="merit_item_det">凸轮分割器重复定位精度30角秒
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 行业应用 -->
+  <div class="pro_profile">
+    <div class="container_zz">
+      <div class="pro_component_title">产品简介</div>
+      <div class="profile_wrapper">
+        <div class="profile_left">
+          <img src="./images/proList/1/2.jpg" class="imgFull">
+        </div>
+        <div class="profile_right">
+          <p>针对电子行业手机电池表面质量人工检测情况,开发了电池表面缺陷无损检测软件。首先电池表面经过倾斜矫正、感兴趣区域提取和字符灰度值修改等预处理操作,通过基于灰度密度分布和灰度差的自适应阈值亮度法对感兴趣区域进行子图像遍历,融合有重合区域的缺陷子图像并滤除没有明显缺陷的区域;</p>
+          <p>然后采用支持向量机多种类分类法,提取二值图像像素分布规律作为训练特征,识别电池表面缺陷种类。</p>
+          <p>产品应用案例：手机零部件生产线</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 技术参数 -->
+  <div class="pro_technical">
+    <div class="container_zz">
+      <div class="pro_component_title">技术参数</div>
+      <div class="technical_wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th width="495">功能及功能指标参数</th>
+              <th width="600">指标参数</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>缺陷类型</td>
+              <td>尺寸检测、异物、破损、气泡、变形、压痕、孔偏、缺胶、多胶</td>
+            </tr>
+            <tr>
+              <td>最小缺陷分辨能力</td>
+              <td>0.01mm</td>
+            </tr>
+            <tr>
+              <td>检测速度</td>
+              <td>0.75s/PCS</td>
+            </tr>
+            <tr>
+              <td>最大检测尺寸</td>
+              <td>85*100mm</td>
+            </tr>
+            <tr>
+              <td>适用产品</td>
+              <td>膜片检测</td>
+            </tr>
+            <tr>
+              <td>检测方式</td>
+              <td>在线/离线</td>
+            </tr>
+            <tr>
+              <td>相机</td>
+              <td>2000w像素黑白CCD相机</td>
+            </tr>
+            <tr>
+              <td>检测系统</td>
+              <td>DN软件平台</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <!-- 文档下载 -->
+  <div class="pro_download">
+    <div class="container_zz">
+      <div class="pro_component_title">文档下载</div>
+      <div class="download_list">
+        <div class="download_item">
+          <a href="#"><img src="./images/proList/icon_pdf.jpg" class="download_type"></a>
+          <div class="download_name">
+            使用说明
+            <span class="download_size">(10M)</span>
+          </div>
+          <a href="#"><img src="./images/proList/download.jpg" class="download_icon"></a>
+        </div>
+        <div class="download_item">
+          <a href="#"><img src="./images/proList/icon_pdf.jpg" class="download_type"></a>
+          <div class="download_name">
+            技术参数
+            <span class="download_size">(18M)</span>
+          </div>
+          <a href="#"><img src="./images/proList/download.jpg" class="download_icon"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 页面底部 -->
+  <footer class="footer">
+    <div class="container_zz">
+      <div class="footer_box1">
+        <div class="logo_img">
+          <img src="./images/footer_logo.png" class="imgFull">
+        </div>
+        <ul class="footer_nav">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="pro_center.html">产品介绍</a></li>
+          <li><a href="industry.html">行业应用</a></li>
+          <li><a href="service.html">服务支持</a></li>
+          <li><a href="news.html">新闻动态</a></li>
+          <li><a href="intro.html" >关于我们</a></li>
+        </ul>
+      </div>
+      <div class="footer_box2">
+        <div class="footer_box2_left"></div>
+        <div class="footer_box2_right">
+          <div class="footer2_item1">
+            <div class="item1_title">电话: </div>
+            <div class="item1_det">0512-66957689</div>
+          </div>
+          <div class="footer2_item1">
+            <div class="item1_title">电子邮件:</div>
+            <div class="item1_det">info@dinnar.cn </div>
+          </div>
+          <div class="footer2_item1">
+            <div class="item1_title">地址： </div>
+            <div class="item1_det">工业园区葑亭大道598号 1号楼东</div>
+          </div>
+          <div class="footer2_item2">
+            <div class="item2_icon icon1">
+              <a href="#"><img src="./images/qq.png"></a>
+            </div>
+            <div class="item2_icon icon2" id="wx_switch">
+              <img src="./images/wx.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- 版权 -->
+  <div class="footer_b">页面版权所有苏州鼎纳自动化技术有限公司 Copyright © 2018 All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;苏ICP备13055261号-1 </div>
+  <script src="js/jquery.2.2.3.min.js"></script>
+  <script src="js/nav.js"></script>
+</body>
+</html>

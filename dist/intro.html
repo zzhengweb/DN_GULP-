@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>苏州鼎纳自动化技术有限公司</title>
+  <meta name="DESCRIPTION" content="">
+  <meta name="KEYWORDS" content=""> 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link type="text/css" rel="stylesheet" href="./fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/response.css">
+  <script src="js/flexible.js"></script>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script type="text/javascript" src="./fancybox/jquery.fancybox-1.3.4.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $("a[rel=example_group]").fancybox({
+        'transitionIn'		: 'none',
+        'transitionOut'		: 'none',
+        'titlePosition' 	: 'over',
+      });
+    });
+  </script>
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!--顶部导航-->
+  <nav class="header_bg close_nav" id="change_nav">
+    <div class="container_zz">
+      <div class="header_nav" onmouseleave="popupHide()">
+        <div class="change_btn visible_xs" id="change_btn">
+            <img src="./images/open.jpg" class="open_btn">
+            <img src="./images/close.jpg" class="close_btn">
+        </div>
+        <div class="header_logo">
+          <a href="index.html"><img src="./images/logo.png" class="imgFull"></a>
+        </div>
+        <ul class="header_list">
+          <li onMouseOver="popupHide()"><a href="index.html">首页</a></li>
+          <li onMouseOver="popupHide()"><a href="pro_center.html">产品介绍</a></li>
+          <li onMouseOver="popupHide()"><a href="industry.html">行业应用</a></li>
+          <li onMouseOver="popupHide()"><a href="service.html">服务支持</a></li>
+          <li onMouseOver="popupHide()"><a href="news.html">新闻动态</a></li>
+          <li onMouseOver="popupComponent()" onclick="popupChange()" class="active">
+            <a style="cursor: pointer;" >关于我们<span class="visible_xs up_icon"><img src="./images/arrow.jpg"></span></a>
+            <ul class="popup" id="popup">
+              <li class="active"><a href="intro.html">公司介绍</a></li>
+              <li><a href="job.html">人才招聘</a></li>
+              <li><a href="develop.html">发展历程</a></li>
+              <li><a href="culture.html">企业文化</a></li>
+              <li><a href="university.html">企业大学</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="change_lang hidden_xs">
+          <a href="#" class="border_en">EN</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- 海报 -->
+  <div class="banner">
+    <img src="./images/intro/banner.jpg" class="imgFull hidden_xs">
+    <img src="./images/intro/banner_xs.jpg" class="imgFull visible_xs">
+  </div>
+  <!-- 公司简介 -->
+  <div class="intro_box">
+    <div class="container_zz">
+      <div class="main_title">
+        <div class="title_big">公司介绍</div>
+        <div class="title_small">公司介绍</div>
+      </div>
+      <div class="video_show">
+        <div class="video_top">
+          <video key='video' src='./video/dn.mp4' controls="controls">您的浏览器不支持 video 标签。</video>
+          <div class="swiper-container" id="video_box">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a rel="example_group" href="./images/intro/big/1.jpg"><img alt="" src="./images/intro/big/1.jpg" class="imgFull"></a>
+              </div>
+              <div class="swiper-slide">
+                <a rel="example_group" href="./images/intro/big/2.jpg"><img alt="" src="./images/intro/big/2.jpg" class="imgFull"></a>
+              </div>
+              <div class="swiper-slide">
+                <a rel="example_group" href="./images/intro/big/3.jpg"><img alt="" src="./images/intro/big/3.jpg" class="imgFull"></a>
+              </div>
+              <div class="swiper-slide">
+                <a rel="example_group" href="./images/intro/big/4.jpg"><img alt="" src="./images/intro/big/4.jpg" class="imgFull"></a>
+              </div>
+              <div class="swiper-slide">
+                <a rel="example_group" href="./images/intro/big/5.jpg"><img alt="" src="./images/intro/big/5.jpg" class="imgFull"></a>
+              </div>
+              <div class="swiper-slide">
+                <a rel="example_group" href="./images/intro/big/6.jpg"><img alt="" src="./images/intro/big/6.jpg" class="imgFull"></a>
+              </div>
+              <div class="swiper-slide">
+                <a rel="example_group" href="./images/intro/big/7.jpg"><img alt="" src="./images/intro/big/7.jpg" class="imgFull"></a>
+              </div>
+              <div class="swiper-slide">
+                <a rel="example_group" href="./images/intro/big/8.jpg"><img alt="" src="./images/intro/big/8.jpg" class="imgFull"></a>
+              </div>
+              <div class="swiper-slide">
+                <a rel="example_group" href="./images/intro/big/9.jpg"><img alt="" src="./images/intro/big/9.jpg" class="imgFull"></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"><img src="./images/intro/pre.png"></div>
+          <div class="swiper-button-next"><img src="./images/intro/next.png"></div>
+        </div>
+      </div>
+      <div class="intro_content">
+        <p>苏州鼎纳自动化技术有限公司成立于 2010 年, 总部坐落在苏州新加坡国际工业园区, 公司拥有 10000 多平米办公、研发和生产基地，同时在深圳、浙江和美国硅谷设有分支机构。</p>
+        <p>公司致力于3D视觉的超高精度量测技术、深度学习的复杂缺陷检测技术、人工智能的物体识别技术以及机器人视觉的智能抓取技术，推出软硬件一体化的全自动智能制造装备，目前已在3C、汽车、5G、显示面板、半导体等具体行业为客户提供方案设计、软硬件开发、制造装配、安装调试、客户培训、售后支持等全方位服务，持续为客户创造最大价值。</p>
+        <p>科研方面，公司每年会将营收的15%投向研发，通过与国际客户、高校以及科研机构建立合作研究关系，为高新技术人才打造一个强大的科研平台。鼎纳拥有10年的行业经验、经手近千个实际应用案例，目前已被授权近百项专利和软件著作权，并获得“江苏省高新技术企业”、“江苏省创新型企业”、“江苏省工程技术研究中心”、“苏州市人工智能视觉系统工程技术研究中心”、“瞪羚企业”“苏州工业园区科技领军企业”等一系列殊荣，鼎纳在最前沿的理论技术体系结构的基础上，和行业内的顶尖客户深度合作研发、转化、落地真正能解决行业痛点的创新型项目。</p>
+        <p>团队方面，公司目前拥有以研发人员为主的专业团队，其中博士、硕士以上学历的高端人才 10 余名，95%以上员工拥有大专以上学历。公司 注重对员工的培训，重视员工与企业的共同成长，通过目标设定、内部培训、绩效沟通和团队协作，帮助员工成长，并更好地为客户及合作伙伴提供快捷专业、全面有效的自动化解决方案。</p>
+        <p>未来，鼎纳将以“专注客户需求，提供极致技术及服务，为客户、员工、股东持续创造价值”为使命，以尊爱至诚、富有责任、追求卓越为价值导向，立志成为全球领先的智能视觉检测解决方案提供商。</p>
+      </div>
+    </div>
+  </div>
+  <div class="intro_map">
+    <div class="container_zz">
+      <img src="./images/intro/map.png" class="imgFull">
+      <div class="place_list">
+        <div class="place_item">
+          <div class="item_info">
+            <img src="./images/intro/icon2.jpg">
+            <div class="info_content">
+              <div class="title">苏州总公司</div>
+            </div>
+          </div>
+          <div class="item_info">
+            <img src="./images/intro/icon1.jpg">
+            <div class="info_content">
+              <div class="content">苏州市工业园区葑亭大道598号</div>
+            </div>
+          </div>
+        </div>
+        <div class="place_item">
+          <div class="item_info">
+            <img src="./images/intro/icon2.jpg">
+            <div class="info_content">
+              <div class="title">浙江办事处</div>
+            </div>
+          </div>
+          <div class="item_info">
+            <img src="./images/intro/icon1.jpg">
+            <div class="info_content">
+              <div class="content">浙江省嘉兴市经济开发区塘汇路1054号星汇大厦源创客北楼G05</div>
+            </div>
+          </div>
+        </div>
+        <div class="place_item">
+          <div class="item_info">
+            <img src="./images/intro/icon2.jpg">
+            <div class="info_content">
+              <div class="title">深圳办事处</div>
+            </div>
+          </div>
+          <div class="item_info">
+            <img src="./images/intro/icon1.jpg">
+            <div class="info_content">
+              <div class="content">深圳市坪山新区坑梓街道横西路东一段82号B栋302室</div>
+            </div>
+          </div>
+        </div>
+        <div class="place_item">
+          <div class="item_info">
+            <img src="./images/intro/icon2.jpg">
+            <div class="info_content">
+              <div class="title">美国硅谷</div>
+            </div>
+          </div>
+          <div class="item_info">
+            <img src="./images/intro/icon1.jpg">
+            <div class="info_content">
+              <div class="content">美国硅谷</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 页面底部 -->
+  <footer class="footer">
+    <div class="container_zz">
+      <div class="footer_box1">
+        <div class="logo_img">
+          <img src="./images/footer_logo.png" class="imgFull">
+        </div>
+        <ul class="footer_nav">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="pro_center.html">产品介绍</a></li>
+          <li><a href="industry.html">行业应用</a></li>
+          <li><a href="service.html">服务支持</a></li>
+          <li><a href="news.html">新闻动态</a></li>
+          <li><a href="intro.html" >关于我们</a></li>
+        </ul>
+      </div>
+      <div class="footer_box2">
+        <div class="footer_box2_left"></div>
+        <div class="footer_box2_right">
+          <div class="footer2_item1">
+            <div class="item1_title">电话: </div>
+            <div class="item1_det">0512-66957689</div>
+          </div>
+          <div class="footer2_item1">
+            <div class="item1_title">电子邮件:</div>
+            <div class="item1_det">info@dinnar.cn </div>
+          </div>
+          <div class="footer2_item1">
+            <div class="item1_title">地址： </div>
+            <div class="item1_det">工业园区葑亭大道598号 1号楼东</div>
+          </div>
+          <div class="footer2_item2">
+            <div class="item2_icon icon1">
+              <a href="#"><img src="./images/qq.png"></a>
+            </div>
+            <div class="item2_icon icon2" id="wx_switch">
+              <img src="./images/wx.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- 版权 -->
+  <div class="footer_b">页面版权所有苏州鼎纳自动化技术有限公司 Copyright © 2018 All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;苏ICP备13055261号-1 </div>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script language="javascript"> 
+    var video_box = new Swiper('#video_box',{
+      delay: 3000,
+      spaceBetween: 30,
+      slidesPerView: 4,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    })
+  </script>
+</body>
+</html>

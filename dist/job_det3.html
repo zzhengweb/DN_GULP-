@@ -1,0 +1,221 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>苏州鼎纳自动化技术有限公司</title>
+  <meta name="DESCRIPTION" content="">
+  <meta name="KEYWORDS" content=""> 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/response.css">
+  
+  <script src="js/flexible.js"></script>
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!--顶部导航-->
+  <nav class="header_bg close_nav" id="change_nav">
+    <div class="container_zz">
+      <div class="header_nav" onmouseleave="popupHide()">
+        <div class="change_btn visible_xs" id="change_btn">
+            <img src="./images/open.jpg" class="open_btn">
+            <img src="./images/close.jpg" class="close_btn">
+        </div>
+        <div class="header_logo">
+          <a href="index.html"><img src="./images/logo.png" class="imgFull"></a>
+        </div>
+        <ul class="header_list">
+          <li onMouseOver="popupHide()"><a href="index.html">首页</a></li>
+          <li onMouseOver="popupHide()"><a href="pro_center.html">产品介绍</a></li>
+          <li onMouseOver="popupHide()"><a href="industry.html">行业应用</a></li>
+          <li onMouseOver="popupHide()"><a href="service.html">服务支持</a></li>
+          <li onMouseOver="popupHide()"><a href="news.html">新闻动态</a></li>
+          <li onMouseOver="popupComponent()" onclick="popupChange()" class="active">
+            <a style="cursor: pointer;" >关于我们<span class="visible_xs up_icon"><img src="./images/arrow.jpg"></span></a>
+            <ul class="popup" id="popup">
+              <li><a href="intro.html">公司介绍</a></li>
+              <li class="active"><a href="job.html">人才招聘</a></li>
+              <li><a href="develop.html">发展历程</a></li>
+              <li><a href="culture.html">企业文化</a></li>
+              <li><a href="university.html">企业大学</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="change_lang hidden_xs">
+          <a href="#" class="border_en">EN</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- 人才招聘详情组件 -->
+  <nav class="det_nav ph_top">
+    <div class="container_zz">
+      <div>
+        <a href="intro.html" class="nav_color1">关于我们</a> &gt; <a href="job.html" class="nav_color1">人才招聘</a> &gt; <a class="nav_color2">招聘详情</a>
+      </div>
+    </div>
+  </nav>
+  <div class="job_det_top">
+    <div class="container_zz">
+      <div class="job_name">项目工程师</div>
+      <div class="company_name">苏州鼎纳自动化技术有限公司</div>
+      <div class="job_condition">
+        <div class="condition_name">岗位职责：</div>
+        <div class="condition_content">
+          <p>
+            1.负责项目分析.评估.成本核算；<br/>
+            2.负责项目计划.执行和进度控制；<br/>
+            3.负责项目成本.进度.风险管控；<br/>
+            4.负责项目生产.出货.调试和客户验收；<br/>
+            5.负责项目总结.改善；<br/>
+          </p>
+        </div>
+      </div>
+      <div class="job_condition">
+        <div class="condition_name">任职要求：</div>
+        <div class="condition_content">
+          <p>
+            1. 具备项目管理经验和能力,英文听说读写能力熟练,具备商务对接的能力工作职责；<br/>
+            2. 能使用英语作为工作语言；<br/>
+            3. 3年以上项目管理工作经验，有非标自动化行业和手机3C行业工作经验优先考虑；<br/>
+            4. 善于学习和总结；<br/>
+            5. 积极主动,良好的沟通能力和团队合作精神；<br/>
+            6. 能接受出差；<br/>
+          </p>
+        </div>
+      </div>
+      <div class="job_condition">
+        <div class="condition_name">薪资待遇：</div>
+        <div class="condition_content">
+          <p>
+            面谈
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="job_form">
+    <div class="container_zz">
+      <div class="form_box">
+        <div class="form_title">职位申请</div>
+        <form>
+          <div class="form-group">
+            <label>姓名<span>*</span></label>
+            <div class="input_row">
+              <img src="./images/job/icon1.jpg">
+              <input type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>手机<span>*</span></label>
+            <div class="input_row">
+              <img src="./images/job/icon2.jpg">
+              <input type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>邮箱<span>*</span></label>
+            <div class="input_row">
+              <img src="./images/job/icon3.jpg">
+              <input type="text">
+            </div>
+          </div>
+          <div class="form-group">
+            <label>附件<span>*</span></label>
+            <div class="input_row">
+              <input type="file" id="fileFun" class="form-control hidden">
+              <button type="button" onclick="fileUpload()">+上传文件（需小于500M)"</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>留言<span>*</span></label>
+            <textarea class="form-control" rows="5"></textarea>
+          </div>
+          <div class="submit_btn">
+            <button type="submit" class="btn btn-success">提交</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- 页面底部 -->
+  <footer class="footer">
+    <div class="container_zz">
+      <div class="footer_box1">
+        <div class="logo_img">
+          <img src="./images/footer_logo.png" class="imgFull">
+        </div>
+        <ul class="footer_nav">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="pro_center.html">产品介绍</a></li>
+          <li><a href="industry.html">行业应用</a></li>
+          <li><a href="service.html">服务支持</a></li>
+          <li><a href="news.html">新闻动态</a></li>
+          <li><a href="intro.html" >关于我们</a></li>
+        </ul>
+      </div>
+      <div class="footer_box2">
+        <div class="footer_box2_left"></div>
+        <div class="footer_box2_right">
+          <div class="footer2_item1">
+            <div class="item1_title">电话: </div>
+            <div class="item1_det">0512-66957689</div>
+          </div>
+          <div class="footer2_item1">
+            <div class="item1_title">电子邮件:</div>
+            <div class="item1_det">info@dinnar.cn </div>
+          </div>
+          <div class="footer2_item1">
+            <div class="item1_title">地址： </div>
+            <div class="item1_det">工业园区葑亭大道598号 1号楼东</div>
+          </div>
+          <div class="footer2_item2">
+            <div class="item2_icon icon1">
+              <a href="#"><img src="./images/qq.png"></a>
+            </div>
+            <div class="item2_icon icon2" id="wx_switch">
+              <img src="./images/wx.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- 版权 -->
+  <div class="footer_b">页面版权所有苏州鼎纳自动化技术有限公司 Copyright © 2018 All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;苏ICP备13055261号-1 </div>
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script language="javascript"> 
+    var video_box = new Swiper('#video_box',{
+      delay: 3000,
+      loop : true,
+      pagination: {
+        el: '.swiper-pagination',
+        bulletClass : 'my-bullet',
+        bulletActiveClass: 'my-bullet-active',
+        clickable :true,
+      },
+    })
+
+    let fileUpload = function(){
+      let fileBtn = document.getElementById('fileFun');
+      fileBtn.click();
+      fileBtn.onchange=function(e){
+        let fileName = e.target.files[0].name;
+        let fileSize = e.target.files[0].size/(1024*1024);
+        if(fileSize>500){
+          alert('文件大于500M');
+        }
+      }
+    }
+  </script>
+</body>
+</html>

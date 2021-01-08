@@ -1,0 +1,325 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <title>苏州鼎纳自动化技术有限公司</title>
+  <meta name="DESCRIPTION" content="">
+  <meta name="KEYWORDS" content=""> 
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/response.css">
+  <script src="js/flexible.js"></script>
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!--顶部导航-->
+  <nav class="header_bg close_nav" id="change_nav" >
+    <div class="container_zz">
+      <div class="header_nav" onmouseleave="popupHide()">
+        <div class="change_btn visible_xs" id="change_btn">
+            <img src="./images/open.jpg" class="open_btn">
+            <img src="./images/close.jpg" class="close_btn">
+        </div>
+        <div class="header_logo">
+          <a href="index.html"><img src="./images/logo.png" class="imgFull"></a>
+        </div>
+        <ul class="header_list">
+          <li onMouseOver="popupHide()" class="active"><a href="index.html">首页</a></li>
+          <li onMouseOver="popupHide()"><a href="pro_center.html">产品介绍</a></li>
+          <li onMouseOver="popupHide()"><a href="industry.html">行业应用</a></li>
+          <li onMouseOver="popupHide()"><a href="service.html">服务支持</a></li>
+          <li onMouseOver="popupHide()"><a href="news.html">新闻动态</a></li>
+          <li onMouseOver="popupComponent()" onClick="popupChange()">
+            <a style="cursor: pointer;" >关于我们<span class="visible_xs up_icon"><img src="./images/arrow.jpg"></span></a>
+            <ul class="popup" id="popup">
+              <li><a href="intro.html">公司介绍</a></li>
+              <li><a href="job.html">人才招聘</a></li>
+              <li><a href="develop.html">发展历程</a></li>
+              <li><a href="culture.html">企业文化</a></li>
+              <li><a href="university.html">企业大学</a></li>
+            </ul>
+          </li>
+          <!-- <li class="visible_xs"><a href="intro.html" >关于我们</a></li> -->
+        </ul>
+        <div class="change_lang hidden_xs">
+          <a href="#" class="border_en">EN</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- 海报 -->
+  <div class="banner">
+    <div class="swiper-container" id="swiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="banner_title">专注客户需求，提供极致技术及服务<br/>为客户、员工、股东持续创造价值</div>
+          <img src="./images/banner/1.jpg" class="imgFull hidden_xs">
+          <img src="./images/banner/1-xs.jpg" class="imgFull visible_xs">
+        </div>
+        <div class="swiper-slide">
+          <div class="banner_title">专注于智能制造<br/>致力于为全球精密制造企业创造价值</div>
+          <img src="./images/banner/2.jpg" class="imgFull hidden_xs">
+          <img src="./images/banner/2-xs.jpg" class="imgFull visible_xs">
+        </div>
+        <div class="swiper-slide">
+          <div class="banner_title">全球领先的智能视觉检测<br/>解决方案提供商</div>
+          <img src="./images/banner/3.jpg" class="imgFull hidden_xs">
+          <img src="./images/banner/3-xs.jpg" class="imgFull visible_xs">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <!-- 首页简介 -->
+  <div class="home_intro">
+    <div class="container_zz">
+      <div class="main_title">
+        <div class="title_big">鼎纳</div>
+        <div class="title_small">鼎纳</div>
+      </div>
+      <div class="home_intro_content">
+        <p>鼎纳（DINNAR）成立于2010年，<br/>
+          始终专注以机器视觉为核心技术，以市场为引领，持续性高强度进行科研输出，使得鼎纳在精密制<br/>造领域取得一项项卓越成果，从实验到实现，再到实践，不断引领着行业的发展。</p>
+      </div>
+      <div class="home_intro_list">
+        <div class="list_item">
+          <img src="./images/homeIntro/1.jpg" class="imgFull">
+          <div class="item_name">机器视觉</div>
+        </div>
+        <div class="list_item">
+          <img src="./images/homeIntro/2.jpg" class="imgFull">
+          <div class="item_name">精密检测</div>
+        </div>
+        <div class="list_item">
+          <img src="./images/homeIntro/3.jpg" class="imgFull">
+          <div class="item_name">工业智能</div>
+        </div>
+        <div class="list_item">
+          <img src="./images/homeIntro/4.jpg" class="imgFull">
+          <div class="item_name">极致技术</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 核心业务 -->
+  <div class="home_core_business">
+    <div class="core_box1">机器视觉，智能制造</div>
+    <div class="core_box2">
+      <div class="container_zz">
+        <div class="main_title">
+          <div class="title_big">核心业务</div>
+          <div class="title_small">核心业务</div>
+        </div>
+        <div class="core_list">
+          <div class="core_item">
+            <div class="left_Corner"></div>
+            <div class="right_Corner"></div>
+            <div class="item_left">
+              <a href="pro_type1.html"><img src="./images/homePro/1.jpg" class="imgFull"></a>
+            </div>
+            <div class="item_right">
+              <div class="item_title" title="UIMP全自动In-Line检测">UIMP全自动In-Line检测</div>
+              <div class="item_content">
+                <p>基于深度学习的AOI检测平台,用于替代人工做外观缺陷检测,检测速度准确度是人工的20-100倍，已在3C、汽车等行业客户中开始使用，是行业中第一批量交付的尺寸+外观缺陷检测的自动化设备。</p>
+              </div>
+            </div>
+          </div>
+          <div class="core_item">
+            <div class="left_Corner"></div>
+            <div class="right_Corner"></div>
+            <div class="item_left visible_xs">
+              <a href="pro_type3.html"><img src="./images/homePro/2.jpg" class="imgFull"></a>
+            </div>
+            <div class="item_right">
+              <div class="item_title" title="UIMP 2D+3D全尺寸量测设备">UIMP 2D+3D全尺寸量测设备</div>
+              <div class="item_content">
+                <p>该设备多轴联动，搭载相机和线激光视觉模块，可实现2D测量和3D扫描以及高精度图像处理。采用产品精准定位，可自动校准不同姿态下的产品，并实现稳定测量。</p>
+              </div>
+            </div>
+            <div class="item_left hidden_xs">
+              <a href="pro_type3.html"><img src="./images/homePro/2.jpg" class="imgFull"></a>
+            </div>
+          </div>
+          <div class="core_item">
+            <div class="left_Corner"></div>
+            <div class="right_Corner"></div>
+            <div class="item_left">
+              <a href="pro_type3.html"><img src="./images/homePro/3.jpg" class="imgFull"></a>
+            </div>
+            <div class="item_right">
+              <div class="item_title" title="智能工厂">智能工厂</div>
+              <div class="item_content">
+                <p>利用先进的视觉检测技术及成熟的一体化解决方案，基于人工智能识别技术、机器人视觉智能抓取技术，面向下一代智能工厂布局的新业务。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 新闻动态 -->
+  <div class="home_news">
+    <div class="container_zz">
+      <div class="main_title">
+        <div class="title_big">新闻动态</div>
+        <div class="title_small">新闻动态</div>
+        <div class="title_more"><a href="news.html">查看全部 &gt;</a></div>
+      </div>
+      <div class="news_list pc_box">
+        <div class="news_item">
+          <div class="left_Corner"></div>
+          <div class="item_img">
+            <a href="news_det.html"><img src="./images/homeNews/1.jpg" class="imgFull"></a>
+          </div>
+          <div class="item_content">
+            <div class="item_title">
+              苏企自主开发工业视觉检测设备 “火眼金睛”4秒揪出手机零部件微米之差
+            </div>
+            <div class="item_time">2020/10/21</div>
+            <div class="item_det">5台机器连成一条生产线，手机芯片、电池电源等零部件通过生产线的短短4秒钟 ...</div>
+            <div class="item_more">
+              <a href="news_det.html">更多 ></a>
+            </div>
+          </div>
+        </div>
+        <div class="news_item">
+          <div class="left_Corner"></div>
+          <div class="item_img">
+            <a href="news_det.html"><img src="./images/homeNews/2.jpg" class="imgFull"></a>
+          </div>
+          <div class="item_content">
+            <div class="item_title">
+              园区领军企业用“火眼金睛”赋能智造转型
+            </div>
+            <div class="item_time">2020/10/21</div>
+            <div class="item_det">5台机器、20多只“眼睛”精准测量尺寸、捕捉缺陷，4秒钟就能完成两个产品的全方位“体检”。在苏州鼎纳自动化技术有限公司的车间里，行业首批全自动尺寸 ...</div>
+            <div class="item_more">
+              <a href="news_det.html">更多 ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="news_list phone_box">
+        <div class="swiper-container" id="swiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="news_item">
+                <div class="left_Corner"></div>
+                <div class="item_img">
+                  <a href="news_det.html"><img src="./images/homeNews/1.jpg" class="imgFull"></a>
+                </div>
+                <div class="item_content">
+                  <div class="item_title">
+                    苏企自主开发工业视觉检测设备 “火眼金睛”4秒揪出手机零部件微米之差
+                  </div>
+                  <div class="item_time">2020/10/21</div>
+                  <div class="item_det">5台机器连成一条生产线，手机芯片、电池电源等零部件通过生产线的短短4秒钟 ...</div>
+                  <div class="item_more">
+                    <a href="news_det.html">更多 ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="news_item">
+                <div class="left_Corner"></div>
+                <div class="item_img">
+                  <a href="news_det.html"><img src="./images/homeNews/2.jpg" class="imgFull"></a>
+                </div>
+                <div class="item_content">
+                  <div class="item_title">
+                    园区领军企业用“火眼金睛”赋能智造转型
+                  </div>
+                  <div class="item_time">2020/10/21</div>
+                  <div class="item_det">5台机器、20多只“眼睛”精准测量尺寸、捕捉缺陷，4秒钟就能完成两个产品的全方位“体检”。在苏州鼎纳自动化技术有限公司的车间里，行业首批全自动尺寸 ...</div>
+                  <div class="item_more">
+                    <a href="news_det.html">更多 ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-case-prev" id="swiper-case-prev"><img src="./images/pre.png"></div>
+        <div class="swiper-case-next" id="swiper-case-next"><img src="./images/next.png"></div>
+      </div>
+    </div>
+  </div>
+  <!-- 页面底部 -->
+  <footer class="footer">
+    <div class="container_zz">
+      <div class="footer_box1">
+        <div class="logo_img">
+          <img src="./images/footer_logo.png" class="imgFull">
+        </div>
+        <ul class="footer_nav">
+          <li><a href="index.html">首页</a></li>
+          <li><a href="pro_center.html">产品介绍</a></li>
+          <li><a href="industry.html">行业应用</a></li>
+          <li><a href="service.html">服务支持</a></li>
+          <li><a href="news.html">新闻动态</a></li>
+          <li><a href="intro.html" >关于我们</a></li>
+        </ul>
+      </div>
+      <div class="footer_box2">
+        <div class="footer_box2_left"></div>
+        <div class="footer_box2_right">
+          <div class="footer2_item1">
+            <div class="item1_title">电话: </div>
+            <div class="item1_det">0512-66957689</div>
+          </div>
+          <div class="footer2_item1">
+            <div class="item1_title">电子邮件:</div>
+            <div class="item1_det">info@dinnar.cn </div>
+          </div>
+          <div class="footer2_item1">
+            <div class="item1_title">地址： </div>
+            <div class="item1_det">工业园区葑亭大道598号 1号楼东</div>
+          </div>
+          <div class="footer2_item2">
+            <div class="item2_icon icon1">
+              <a href="#"><img src="./images/qq.png"></a>
+            </div>
+            <div class="item2_icon icon2" id="wx_switch">
+              <img src="./images/wx.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- 版权 -->
+  <div class="footer_b">页面版权所有苏州鼎纳自动化技术有限公司 Copyright © 2018 All Rights Reserved.&nbsp;&nbsp;&nbsp;&nbsp;苏ICP备13055261号-1 </div>
+  <script src="js/jquery.2.2.3.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script language="javascript"> 
+    var mySwiper1 = new Swiper('#swiper1',{
+      autoplay:true,
+      delay: 3000,
+      loop : true,
+      pagination: {
+        el: '.swiper-pagination',
+        bulletClass : 'my-bullet',
+        bulletActiveClass: 'my-bullet-active',
+        clickable :true,
+      },
+    })
+    var mySwiper2 = new Swiper('#swiper2',{
+      delay: 3000,
+      spaceBetween : 32,
+      navigation: {
+        nextEl: '.swiper-case-next',
+        prevEl: '.swiper-case-prev',
+      }
+    })
+  </script>
+</body>
+</html>
