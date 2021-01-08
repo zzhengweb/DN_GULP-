@@ -1034,6 +1034,9 @@ a:hover,a{
                     letter-spacing: .1em;
                 }
             }
+            .imgFull{
+                width: 100%;
+            }
         }
         .swiper-slide-active{
             .thumbs_model{
@@ -1067,7 +1070,7 @@ a:hover,a{
         position: relative;
         .swiper-case-prev,.swiper-case-next{
             position:absolute;
-            top:50%;
+            top:394px;
             z-index: 1;
             &.swiper-button-disabled{
                 img{
@@ -1869,6 +1872,7 @@ a:hover,a{
             background-image: unset;
             height: 56px;
             width: 37px;
+            top:calc(50% - 50px);
         }
     }
 }
