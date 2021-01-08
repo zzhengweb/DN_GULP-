@@ -654,7 +654,7 @@
 			var dim = {
 				width : parseInt(start_pos.width + (final_pos.width - start_pos.width) * pos, 10),
 				height : parseInt(start_pos.height + (final_pos.height - start_pos.height) * pos, 10),
-
+				
 				top : parseInt(start_pos.top + (final_pos.top - start_pos.top) * pos, 10),
 				left : parseInt(start_pos.left + (final_pos.left - start_pos.left) * pos, 10)
 			};
@@ -1030,7 +1030,7 @@
 			.animate({
 				'top' : parseInt(Math.max(view[3] - 20, view[3] + ((view[1] - content.height() - 40) * 0.5) - currentOpts.padding)),
 				'left' : parseInt(Math.max(view[2] - 20, view[2] + ((view[0] - content.width() - 40) * 0.5) - currentOpts.padding))
-			}, typeof arguments[0] == 'number' ? arguments[0] : 200);
+			}, typeof arguments[0] == 'number' ? arguments[0] : 0);
 	};
 
 	$.fancybox.init = function() {
