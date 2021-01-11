@@ -1085,8 +1085,8 @@ a:hover,a{
             right: 60px;
         }
         .container_zz{
-            max-width: 1440px;
-            padding:0 20px;
+            max-width: 1720px;
+            padding:0 160px;
             .case_show{
                 padding:20px;
             }
@@ -1137,11 +1137,11 @@ a:hover,a{
                         content: ' ';
                         border: solid transparent;
                         position: absolute;
-                        border-width: 25px;
+                        border-width: 30px;
                         border-bottom-color: #ffffff;
                         border-right-color: #ffffff;
-                        bottom: -12px;
-                        right: -12px;
+                        bottom: -17px;
+                        right: -17px;
                         z-index: 1;
                     }
                     &::before {

@@ -568,8 +568,29 @@
 }
 // 行业应用
 
+@media screen and (max-width: 1720px){
+    .switch_case_bottom{
+        .case_bottom{
+            .swiper-case-prev,.swiper-case-next{
+                top:20vw;
+            }
+        }
+    }
+}
 @media screen and (max-width: 1400px){
-    .switch_industry{
+    .switch_case_bottom{
+        .case_bottom{
+            .container_zz{
+                .case_show{
+                    .slide_content{
+                        padding: 45px;
+                    }
+                }
+            }
+            .swiper-case-prev,.swiper-case-next{
+                top:18vw;
+            }
+        }
         .top_img{
             .top_right{
                 padding:60px 20px 0 30px;
@@ -599,14 +620,11 @@
                 }
             }
         }
+        
     }
-    .switch_case_bottom{
-        .case_bottom{
-            .swiper-case-prev,.swiper-case-next{
-                top:13vw;
-            }
-        }
-    }
+}
+@media screen and (max-width: 1180px){
+
 }
 @media screen and (max-width: 1080px){
     .switch_industry{
@@ -629,10 +647,19 @@
             .container_zz{
                 .case_show{
                     .slide_content{
-                        height: 320px;
-                        padding: 30px;
+                        height: auto;
+                        padding: 20px;
+                        .case_title{
+                            font-size:22px;
+                        }
+                        .case_det{
+                            font-size: 18px;
+                        }
                     }
                 }
+            }
+            .swiper-case-prev,.swiper-case-next{
+                top:16vw;
             }
         }
     }
