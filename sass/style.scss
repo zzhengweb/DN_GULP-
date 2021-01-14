@@ -1072,6 +1072,7 @@ a:hover,a{
             position:absolute;
             top:394px;
             z-index: 1;
+            outline: none;
             &.swiper-button-disabled{
                 img{
                     opacity: .5;
@@ -1531,6 +1532,7 @@ a:hover,a{
         .video_top{
             position: relative;
             video{
+                z-index: 1;
                 height: 647px;
                 width: 100%;
                 object-fit: fill;
