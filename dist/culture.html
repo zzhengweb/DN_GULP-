@@ -130,7 +130,38 @@
       <div class="pro_component_title">企业活动</div>
       <div class="culture_content">
         <div class="swiper-container" id="culture_box">
-          <div class="swiper-wrapper"></div>
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+              <!-- small文件夹的图片为主图，页面显示的图片 -->
+              <!-- a标签下的href里图片为弹窗图片 -->
+              <!-- class为'img_title'是标题 -->
+              <a rel="example_group1" href="./images/culture/1/1.jpg"><img src="./images/culture/small/1.jpg" class="imgFull"></a>
+              <a rel="example_group1" href="./images/culture/1/2.jpg" style="display:none"></a>
+              <a rel="example_group1" href="./images/culture/1/3.jpg" style="display:none"></a>
+              <a rel="example_group1" href="./images/culture/1/4.jpg" style="display:none"></a>
+              <a rel="example_group1" href="./images/culture/1/5.jpg" style="display:none"></a>
+              <a rel="example_group1" href="./images/culture/1/6.jpg" style="display:none"></a>
+              <div class="img_title">2019年圣诞</div>
+            </div>
+            <div class="swiper-slide">
+              <a rel="example_group2" href="./images/culture/2/1.jpg"><img src="./images/culture/small/2.jpg" class="imgFull"></a>
+              <a rel="example_group2" href="./images/culture/2/2.jpg" style="display:none"></a>
+              <a rel="example_group2" href="./images/culture/2/3.jpg" style="display:none"></a>
+              <a rel="example_group2" href="./images/culture/2/4.jpg" style="display:none"></a>
+              <a rel="example_group2" href="./images/culture/2/5.jpg" style="display:none"></a>
+              <a rel="example_group2" href="./images/culture/2/6.jpg" style="display:none"></a>
+              <div class="img_title">2019年拓展</div>
+            </div>
+            <div class="swiper-slide">
+              <a rel="example_group3" href="./images/culture/3/1.jpg"><img src="./images/culture/small/3.jpg" class="imgFull"></a>
+              <a rel="example_group3" href="./images/culture/3/2.jpg" style="display:none"></a>
+              <a rel="example_group3" href="./images/culture/3/3.jpg" style="display:none"></a>
+              <a rel="example_group3" href="./images/culture/3/4.jpg" style="display:none"></a>
+              <a rel="example_group3" href="./images/culture/3/5.jpg" style="display:none"></a>
+              <a rel="example_group3" href="./images/culture/3/6.jpg" style="display:none"></a>
+              <div class="img_title">2020年10周年</div>
+            </div>
+          </div>
           <div class="swiper-button-prev"><img src="./images/pre.png"></div>
           <div class="swiper-button-next"><img src="./images/next.png"></div>
         </div>
@@ -189,51 +220,52 @@
     //title活动名称
     //count活动展示图片个数，小于文件夹中图片个数
     // 图片和文件夹目前都是以数字命名，方便操作
-    let cultureList=[{
-      title:'2019年圣诞',
-      count:3
-    },{
-      title:'2019年拓展',
-      count:5
-    },{
-      title:'2020年10周年',
-      count:14
-    },{
-      title:'2020年Excel培训',
-      count:2
-    },{
-      title:'2020年工作坊',
-      count:10
-    },{
-      title:'2020年会',
-      count:9
-    },{
-      title:'2020年消防演练',
-      count:69
-    },{
-      title:'2020年员工外部培训',
-      count:6
-    }]
-    let cultureNode = document.getElementById('culture_box');
-    let cultureBox = cultureNode.getElementsByClassName('swiper-wrapper')[0];
-    for(let i = 1;i<=cultureList.length;i++){//企业文化活动遍历
-      let slideNode = document.createElement('div');
-      slideNode.className = 'swiper-slide';
-      let slideContent = '';
-      for(let j=1;j<=cultureList[i-1].count;j++){//企业图片遍历
-        if(j===1){
-          slideContent += `<a rel="example_group${i}" href="./images/culture/${i}/${j}.jpg"><img src="./images/culture/small/${i}.jpg" class="imgFull"></a>`;
-        }else{
-          slideContent += `<a rel="example_group${i}" href="./images/culture/${i}/${j}.jpg" style="display:none"></a>`;
-        }
-      }
-      slideContent += `<div class="img_title">${cultureList[i-1].title}</div>`;
-      slideNode.innerHTML = slideContent;
-      cultureBox.appendChild(slideNode);
-    }
+    // let cultureList=[{
+    //   title:'2019年圣诞',
+    //   count:3
+    // },{
+    //   title:'2019年拓展',
+    //   count:5
+    // },{
+    //   title:'2020年10周年',
+    //   count:14
+    // },{
+    //   title:'2020年Excel培训',
+    //   count:2
+    // },{
+    //   title:'2020年工作坊',
+    //   count:10
+    // },{
+    //   title:'2020年会',
+    //   count:9
+    // },{
+    //   title:'2020年消防演练',
+    //   count:69
+    // },{
+    //   title:'2020年员工外部培训',
+    //   count:6
+    // }]
+    // let cultureNode = document.getElementById('culture_box');
+    // let cultureBox = cultureNode.getElementsByClassName('swiper-wrapper')[0];
+    // for(let i = 1;i<=cultureList.length;i++){//企业文化活动遍历
+    //   let slideNode = document.createElement('div');
+    //   slideNode.className = 'swiper-slide';
+    //   let slideContent = '';
+    //   for(let j=1;j<=cultureList[i-1].count;j++){//企业图片遍历
+    //     if(j===1){
+    //       slideContent += `<a rel="example_group${i}" href="./images/culture/${i}/${j}.jpg"><img src="./images/culture/small/${i}.jpg" class="imgFull"></a>`;
+    //     }else{
+    //       slideContent += `<a rel="example_group${i}" href="./images/culture/${i}/${j}.jpg" style="display:none"></a>`;
+    //     }
+    //   }
+    //   slideContent += `<div class="img_title">${cultureList[i-1].title}</div>`;
+    //   slideNode.innerHTML = slideContent;
+    //   cultureBox.appendChild(slideNode);
+    // }
 
     var culture_box = new Swiper('#culture_box',{
-      delay: 3000,
+      autoplay:true,
+      delay: 4000,
       loop : true,
       navigation: {
         nextEl: '.swiper-button-next',

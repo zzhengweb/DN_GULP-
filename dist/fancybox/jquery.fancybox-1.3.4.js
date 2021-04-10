@@ -56,7 +56,7 @@
 			selectedOpts.width = 'auto';
 			selectedOpts.height = 'auto';
 
-			tmp.html( '<p id="fancybox-error">The requested content cannot be loaded.<br />Please try again later.</p>' );
+			tmp.html( '<p id="fancybox-error">无法加载请求的内容。<br />请稍后再试。</p>' );
 
 			_process_inline();
 		},

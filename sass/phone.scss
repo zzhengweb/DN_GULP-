@@ -1333,7 +1333,9 @@
             .swiper-button-prev,.swiper-button-next{
                 background-image: unset;
                 height: 1.4rem;
-                width: 0.925;
+                width: 0.925rem;
+                top:calc(50% - 1.25rem);
+                margin-top: -1.125rem;
             }
         }
     }
